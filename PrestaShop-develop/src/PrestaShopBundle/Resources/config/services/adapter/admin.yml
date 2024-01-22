@@ -1,0 +1,9 @@
+services:
+  _defaults:
+    public: false
+
+  prestashop.adapter.legacy_db:
+    public: true
+    class: 'Db'
+    factory: [ 'Db', 'getInstance' ]
+    deprecated: '%service_id% service is deprecated and will be removed in 8.0.'
